@@ -34,7 +34,7 @@ function App() {
             <Sidebar sideBarToggle={sideBarToggle} todoList={todoList} />
             <MainContent
                style={{
-                  width: `calc(100vw-(${sideBarToggle ? '30rem' : '7rem'}))`,
+                  width: `calc(100vw-(30rem))`,
                }}
             >
                <TodoContent>
@@ -54,17 +54,17 @@ const Wrapper = styled.div`
    background-color: #18181f;
    min-height: 100vh;
    min-width: 100vw;
+   color: #eee;
 `;
 
 const Main = styled.div`
-   //  display: flex;
+   display: flex;
 `;
 
 const MainContent = styled.div`
    width: 100vw;
    display: flex;
    justify-content: center;
-   align-items: center;
    transition: 0.3s;
 `;
 

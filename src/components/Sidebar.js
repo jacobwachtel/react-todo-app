@@ -29,12 +29,49 @@ export default Sidebar;
 const Wrapper = styled.div`
    height: calc(100vh - 7rem);
    background-color: #20212d;
+   padding-left: 3.5rem;
 `;
 
-const Title = styled.div``;
+const Title = styled.div`
+   font-size: 3rem;
+   font-weight: 700;
+   padding: 5rem 0;
+`;
 
-const CategoryList = styled.div``;
+const CategoryList = styled.div`
+   margin-top: -1.6rem;
+`;
 
-const Category = styled.div``;
+const Category = styled.div`
+   display: flex;
+   align-items: center;
+   margin: 0.4rem -1.6rem;
+   padding: 1rem 1.6rem;
+   border-radius: 4px;
+   width: calc(100% - 3.2rem);
 
-const CategoryIcon = styled.div``;
+   span {
+      margin-left: 1rem;
+      font-weight: 500;
+      font-size: 1.8rem;
+   }
+
+   &:hover {
+      background-color: #18181f;
+      transition: 0.3s;
+      cursor: pointer;
+   }
+`;
+
+const CategoryIcon = styled.div`
+   height: 3rem;
+   width: 3rem;
+   border-radius: 4px;
+   margin-right: 1rem;
+   display: grid;
+   place-items: center;
+
+   i {
+      font-size: 1.5rem;
+   }
+`;
