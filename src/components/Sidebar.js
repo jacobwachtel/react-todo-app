@@ -29,13 +29,15 @@ export default Sidebar;
 const Wrapper = styled.div`
    height: calc(100vh - 7rem);
    background-color: #20212d;
-   padding-left: 3.5rem;
+   padding-left: 1.5rem;
+   display: flex;
+   flex-direction: column;
 `;
 
 const Title = styled.div`
    font-size: 3rem;
    font-weight: 700;
-   padding: 5rem 0;
+   padding: 5rem 0 5rem 0.5rem;
 `;
 
 const CategoryList = styled.div`
@@ -64,14 +66,16 @@ const Category = styled.div`
 `;
 
 const CategoryIcon = styled.div`
-   height: 3rem;
-   width: 3rem;
+   height: 30px;
+   width: 30px;
+   /* font-size: 1.5rem; */
    border-radius: 4px;
    margin-right: 1rem;
    display: grid;
    place-items: center;
+   flex-shrink: 0;
 
-   i {
+   /* i {
       font-size: 1.5rem;
-   }
+   } */
 `;
