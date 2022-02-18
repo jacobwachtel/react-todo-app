@@ -29,7 +29,10 @@ function App() {
 
    return (
       <Wrapper>
-         <Header />
+         <Header
+            sideBarToggle={sideBarToggle}
+            setSideBarToggle={setSideBarToggle}
+         />
          <Main>
             <Sidebar sideBarToggle={sideBarToggle} todoList={todoList} />
             <MainContent
@@ -40,7 +43,14 @@ function App() {
                <TodoContent>
                   <Title>Dashboard</Title>
                   <Greeting>Good Morning, Jacob!</Greeting>
-                  <TodoList />
+                  {todoList.map((category) => (
+                     <TodoList
+                        key={category.name}
+                        name={category.name}
+                        color={category.color}
+                        icon={category.icon}
+                     />
+                  ))}
                </TodoContent>
             </MainContent>
          </Main>

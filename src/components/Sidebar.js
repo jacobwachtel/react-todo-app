@@ -29,13 +29,15 @@ export default Sidebar;
 const Wrapper = styled.div`
    height: calc(100vh - 7rem);
    background-color: #20212d;
-   padding-left: 3.5rem;
+   padding-left: 1.5rem;
+   display: flex;
+   flex-direction: column;
 `;
 
 const Title = styled.div`
    font-size: 3rem;
    font-weight: 700;
-   padding: 5rem 0;
+   padding: 5rem 0 5rem 0.5rem;
 `;
 
 const CategoryList = styled.div`
@@ -70,7 +72,7 @@ const CategoryIcon = styled.div`
    margin-right: 1rem;
    display: grid;
    place-items: center;
-
+   flex-shrink: 0;
    i {
       font-size: 1.5rem;
    }
